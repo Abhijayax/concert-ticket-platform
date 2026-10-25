@@ -1,0 +1,45 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+!.env.example.*
+local.settings.json
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfplan
+.DS_Store
+npm-debug.log*
+
+# Local Azure Storage emulator data
+.azurite/
+__azurite_*
+*.log
+
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+local.settings.json
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Local Terraform variable files
+*.tfvars
+*.tfvars.json
+
+# Local demo-data backups
+.reset-backups/
+
+# Deployment staging
+.deploy/
+*.tgz

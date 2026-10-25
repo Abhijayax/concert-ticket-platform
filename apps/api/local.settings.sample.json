@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "NODE_ENV": "development",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "",
+    "DEMO_PASSWORD_ALICE": "<choose-a-demo-password>",
+    "DEMO_PASSWORD_BOB": "<choose-a-demo-password>",
+    "DEMO_PASSWORD_ADMIN": "<choose-a-demo-password>",
+    "AUTH_SIGNING_SECRET": "<random-string-at-least-16-chars>"
+  }
+}

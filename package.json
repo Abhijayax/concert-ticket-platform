@@ -1,0 +1,36 @@
+{
+  "name": "concert-ticket-platform",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "npm run build --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify:invariants": "tsx scripts/verify-invariants.ts",
+    "deploy:api": "tsx scripts/deploy-api.ts",
+    "deploy:web": "tsx scripts/deploy-web.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.22.0",
+    "@types/node": "20.17.24",
+    "azurite": "^3.33.0",
+    "eslint": "9.22.0",
+    "globals": "16.0.0",
+    "prettier": "3.5.3",
+    "tsx": "^4.19.3",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.26.1",
+    "vitest": "3.0.8"
+  }
+}
